@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6453A382-70F4-4C2C-B3D7-654D851AA8CC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>NXTControl</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\c++Library2.1\adc_8591.cpp" />
+    <ClCompile Include="..\..\c++Library2.1\bluetooth.cpp" />
+    <ClCompile Include="..\..\c++Library2.1\brick.cpp" />
+    <ClCompile Include="..\..\c++Library2.1\color.cpp" />
+    <ClCompile Include="..\..\c++Library2.1\compass.cpp" />
+    <ClCompile Include="..\..\c++Library2.1\error.cpp" />
+    <ClCompile Include="..\..\c++Library2.1\filesystem.cpp" />
+    <ClCompile Include="..\..\c++Library2.1\i2c.cpp" />
+    <ClCompile Include="..\..\c++Library2.1\io_8574.cpp" />
+    <ClCompile Include="..\..\c++Library2.1\motor.cpp" />
+    <ClCompile Include="..\..\c++Library2.1\network.cpp" />
+    <ClCompile Include="..\..\c++Library2.1\sensor.cpp" />
+    <ClCompile Include="..\..\c++Library2.1\sonar.cpp" />
+    <ClCompile Include="..\..\c++Library2.1\tilt.cpp" />
+    <ClCompile Include="program.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\c++Library2.1\adc_8591.h" />
+    <ClInclude Include="..\..\c++Library2.1\bluetooth.h" />
+    <ClInclude Include="..\..\c++Library2.1\brick.h" />
+    <ClInclude Include="..\..\c++Library2.1\color.h" />
+    <ClInclude Include="..\..\c++Library2.1\compass.h" />
+    <ClInclude Include="..\..\c++Library2.1\connection.h" />
+    <ClInclude Include="..\..\c++Library2.1\error.h" />
+    <ClInclude Include="..\..\c++Library2.1\filesystem.h" />
+    <ClInclude Include="..\..\c++Library2.1\gyro.h" />
+    <ClInclude Include="..\..\c++Library2.1\i2c.h" />
+    <ClInclude Include="..\..\c++Library2.1\io_8574.h" />
+    <ClInclude Include="..\..\c++Library2.1\light.h" />
+    <ClInclude Include="..\..\c++Library2.1\motor.h" />
+    <ClInclude Include="..\..\c++Library2.1\network.h" />
+    <ClInclude Include="..\..\c++Library2.1\nxt.h" />
+    <ClInclude Include="..\..\c++Library2.1\rcx_light.h" />
+    <ClInclude Include="..\..\c++Library2.1\rotation.h" />
+    <ClInclude Include="..\..\c++Library2.1\sensor.h" />
+    <ClInclude Include="..\..\c++Library2.1\sonar.h" />
+    <ClInclude Include="..\..\c++Library2.1\sound.h" />
+    <ClInclude Include="..\..\c++Library2.1\temperature.h" />
+    <ClInclude Include="..\..\c++Library2.1\tilt.h" />
+    <ClInclude Include="..\..\c++Library2.1\touch.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
